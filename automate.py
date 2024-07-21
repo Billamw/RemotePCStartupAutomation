@@ -8,12 +8,13 @@ import subprocess
 # from animations import ANIMATION
 # from parrot import frames as ANIMATION
 from animations import ANIMATION
+from secrect_key import secret_key
 
 start_time = time.time()
 url = "https://llamalab.com/automate/cloud/message"
 headers = {"Content-Type": "application/json"}
 data = {
-    "secret": "2.Ws8ebtts_UtTa82aruPttyavnupqXmlf-ER5inr-MF0",
+    "secret": secret_key,
     "to": "johan.dasbach.jd@gmail.com",
     "device": None,
     "priority": "high",

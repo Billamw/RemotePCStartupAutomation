@@ -1,5 +1,5 @@
 # https://github.com/hugomd/ascii-live/tree/master?tab=readme-ov-file
-frames = [
+parrot_frames = [
 	"""                  
                          .cccc;;cc;';c.
                       .,:dkdc:;;:c:,:d:.

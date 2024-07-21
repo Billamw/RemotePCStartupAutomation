@@ -2,14 +2,28 @@ import os
 import sys
 import time
 import socket
+import argparse
 import requests
 import subprocess
 
 # from animations import ANIMATION
-# from parrot import frames as ANIMATION
-from animations import ANIMATION
+from parrot import parrot_frames
+from animations import loading_bar
+
 from secrect_key import secret_key
 
+# # ArgumentParser-Objekt erstellen
+# parser = argparse.ArgumentParser(description="Automate Script")
+# # Argument definieren
+# parser.add_argument("-p", "--parrot", action="store_true", help="Use parrot animation")
+
+# # Argumente parsen
+# args = parser.parse_args()
+
+# # Entscheiden, welche Animation basierend auf dem Argument verwendet werden soll
+# ANIMATION = parrot_frames if args.parrot else loading_bar
+ANIMATION = parrot_frames if "-p" in sys.argv else loading_bar
+print(sys.argv)
 start_time = time.time()
 url = "https://llamalab.com/automate/cloud/message"
 headers = {"Content-Type": "application/json"}

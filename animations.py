@@ -1,4 +1,4 @@
-ANIMATION = [
+loading_bar = [
     "[=                 ]",
     "[==                ]",
     "[===               ]",
